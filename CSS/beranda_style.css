@@ -30,8 +30,6 @@ html {
   background-color: #7472cc;
   display: flex;
   align-items: center;
-  justify-content: start;
-  height: 60px;
 }
 
 nav img {
@@ -41,9 +39,11 @@ nav img {
 
 .antrean {
   height: 40px;
-  translate: 0px 5px;
   margin-left: 20px;
-  flex: 0.001;
+}
+
+.mobile {
+  display: none;
 }
 
 .navbar ul {
@@ -116,6 +116,11 @@ nav img {
   margin-right: 25px;
 }
 
+.bar-ipt {
+  display: flex;
+  align-items: center;
+}
+
 .bar input {
   border-radius: 10px;
   padding: 5px;
@@ -125,10 +130,6 @@ nav img {
 
 input:hover {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-.bar img {
-  translate: 0px 4px;
 }
 
 /* Gallery */
@@ -274,6 +275,8 @@ button {
 .resto-img {
   min-width: 250px;
   min-height: 190px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .stars {
@@ -538,7 +541,6 @@ button {
   .bar input {
     width: 200px;
     margin-right: 10px;
-    translate: 0px 0px;
   }
 
   .bar img {
@@ -559,16 +561,61 @@ button {
   }
 }
 
+/* MOBILE */
 @media (max-width: 690px) {
-  /* BAR */
-  .bar input {
-    width: 100px;
-    margin-right: 10px;
-    translate: 0px 0px;
+  /* NAV */
+  .navbar {
+    flex-direction: column-reverse;
+  }
+
+  .bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    margin-top: 5px;
   }
 
   .dropbtn {
-    padding-top: 10px;
+    padding-top: 9px;
     padding-bottom: 10px;
   }
+
+  .nav-item a {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  /* MAIN-PAGE */
+  .resto-container {
+    height: 315px;
+  }
+
+  .resto {
+    height: 310px;
+  }
+
+  .resto-img {
+    min-width: 200px;
+    min-height: 155px;
+  }
+
+  .favourite,
+  .queue {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .favourite {
+    translate: 75px -312px;
+  }
+
 }
+

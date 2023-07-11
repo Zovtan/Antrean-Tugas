@@ -150,8 +150,9 @@ hr {
 .button a:hover {
   background: #7472cc;
 }
+
 @media (max-width: 1441px) {
-/*   MAIN */
+  /* MAIN */
   .main {
     justify-content: center;
     align-items: center;
@@ -166,11 +167,28 @@ hr {
   .aside2 {
     display: none;
   }
+
+  /* CHECKBOX */
+  .cekbox {
+    translate: -145px -16.8px;
+  }
 }
 
 @media (max-width: 480px) {
+  /* DOWNLOAD */
+  .download {
+    align-self: center;
+    text-align: center;
+  }
+
   /* MAIN */
   form {
-    margin: 10px;
+    min-width: 300px;
+  }
+
+  /* CHECKBOX */
+  .cekbox {
+    translate: -95px -16.8px;
   }
 }
+

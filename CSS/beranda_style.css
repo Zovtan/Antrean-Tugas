@@ -541,7 +541,6 @@ button {
   }
 
   .bar {
-    margin-right: 10px;
     display: flex;
     align-items: center;
   }
@@ -586,6 +585,16 @@ button {
     display: flex;
     justify-content: space-between;
     padding-top: 5px;
+    margin-right: 15px;
+  }
+
+  .bar-ipt {
+    display: flex;
+    justify-content: end;
+  }
+
+  .bar input{
+    width: 80%;
   }
 
   .pc {

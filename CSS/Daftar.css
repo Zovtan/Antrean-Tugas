@@ -109,3 +109,15 @@ form .button input:hover {
   justify-content: center;
   align-items: end;
 }
+
+@media (max-width:480px) {
+  /* FORM */
+  form{
+    max-width: 350px;
+  }
+
+  /* CHECKBOX */
+  .cekbox {
+    translate: -75px -16px;
+  }
+}

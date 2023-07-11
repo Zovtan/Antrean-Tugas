@@ -416,6 +416,16 @@ input:hover {
     display: flex;
     justify-content: space-between;
     padding-top: 5px;
+    margin-right: 15px;
+  }
+
+  .bar-ipt {
+    display: flex;
+    justify-content: end;
+  }
+
+  .bar input{
+    width: 80%;
   }
 
   .pc {
@@ -436,7 +446,6 @@ input:hover {
     padding-top: 9px;
     padding-bottom: 9px;
   }
-
   /* PREVIEW */
   .preview-container {
     width: 100%;

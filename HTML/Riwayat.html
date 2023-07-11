@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antre - Riwayat</title>
+    <link rel="stylesheet" href="../CSS/Riwayat.css">
+    <link rel="shortcut icon" href="../Assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <script>
+        // Set the countdown time in minutes
+        var countdownMinutes = 30;
+
+        // Calculate the end time
+        var endTime = new Date();
+        endTime.setMinutes(endTime.getMinutes() + countdownMinutes);
+
+        // Update the countdown every second
+        var countdown = setInterval(function () {
+            // Get the current time
+            var currentTime = new Date().getTime();
+
+            // Calculate the time remaining
+            var timeRemaining = endTime - currentTime;
+
+            // Calculate minutes and seconds
+            var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
+
+            // If the countdown is finished, display a message
+            if (timeRemaining < 0) {
+                clearInterval(countdown);
+                document.getElementById("timer").innerHTML = "Time's up!";
+            }
+        }, 1000);
+    </script>
+    <div class="container">
+        <section class="nav-container">
+            <nav class="navbar">
+              <img class="antrean" src="../Assets/Logo.png" />
+              <ul class="nav">
+                <li class="nav-item"><a href="beranda.html">Beranda</a></li>
+                <li class="dropdown">
+                  <button class="dropbtn">Restoran &#9662;</button>
+                  <div class="dropdown-content">
+                    <a href="beranda.html#restoran-dekatmu">Restoran Dekatmu</a>
+                    <a href="beranda.html#sponsor">Restoran Sponsor</a>
+                    <a href="beranda.html#restoran-populer">Restoran Populer</a>
+                  </div>
+                </li>
+                <li class="nav-item"><a href="Riwayat.html">Riwayat</a></li>
+              </ul>
+              <div class="bar">
+                <img src="../Assets/Search.png" />
+                <input class="search-input" type="text" placeholder="Search..." />
+                <img src="../Assets/Bell.png" />
+                <img src="../Assets/User.png" />
+              </div>
+            </nav>
+          </section>
+
+        <section class="main-container">
+            <h1>Dalam Antrian</h1>
+            <div class="current">
+                <img src="../Assets/resto 1 big.png" class="resto" alt="resto 1">
+
+                <div class="info">
+                    <div>
+                        <p>Cafe Caffeine</p>
+                    </div>
+                    <div><img class="noantri" src="../Assets/NoAntri.png"> No. Antrian 213</div>
+                    <div id="timer" class="timer"></div>
+                    <img class="queue sedang" src="../Assets/sedang.png">
+                </div>
+                <span class="seperator"></span>
+                <img src="../Assets/wait.png" class="checkmark">
+        </section>
+
+        <section class="aside-container">
+            <h1>Riwayat</h1>
+            <div class="pass"><img src="../Assets/resto riwayat 1.jpg" class="resto" alt="resto 1">
+                <div class="info">
+                    <div>
+                        <p>Pootis Sandwich</p>
+                    </div>
+                    <div><img class="noantri" src="../Assets/NoAntri.png"> No. Antrian 322</div>
+                    <span style="color: green;">10m 8s</span>
+                    <img class="queue sepi" src="../Assets/sepi.png">
+                </div>
+                <span class="seperator"></span>
+                <img src="../Assets/berhasil.png" class="checkmark">
+            </div>
+            <div class="pass"><img src="../Assets/resto riwayat 2.jpg" class="resto" alt="resto 1">
+
+                <div class="info">
+                    <div>
+                        <p>Ciggy Break</p>
+                    </div>
+                    <div><img class="noantri" src="../Assets/NoAntri.png"> No. Antrian 528</div>
+                    <span style="color: rgb(233, 217, 0);">17m 19s</span>
+                    <img class="queue sedang" src="../Assets/sedang.png">
+                </div>
+                <span class="seperator"></span>
+                <img src="../Assets/berhasil.png" class="checkmark">
+            </div>
+            <div class="pass"><img src="../Assets/resto riwayat 3.jpg" class="resto" alt="resto 1">
+
+                <div class="info">
+                    <div>
+                        <p>Liberty Steak</p>
+                    </div>
+                    <div><img class="noantri" src="../Assets/NoAntri.png"> No. Antrian 012</div>
+                    <span style="color: red;">45m 14s</span>
+                    <img class="queue ramai" src="../Assets/ramai.png">
+                </div>
+                <span class="seperator"></span>
+                <img src="../Assets/fail.png" class="checkmark">
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

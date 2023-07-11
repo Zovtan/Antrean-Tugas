@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antrean - Cafe Caffein</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/cafe_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="nav-container">
+            <nav class="navbar">
+              <img class="antrean" src="../Assets/Logo.png" />
+              <ul class="nav">
+                <li class="nav-item"><a href="beranda.html">Beranda</a></li>
+                <li class="dropdown">
+                  <button class="dropbtn">Restoran &#9662;</button>
+                  <div class="dropdown-content">
+                    <a href="beranda.html#restoran-dekatmu">Restoran Dekatmu</a>
+                    <a href="beranda.html#sponsor">Restoran Sponsor</a>
+                    <a href="beranda.html#restoran-populer">Restoran Populer</a>
+                  </div>
+                </li>
+                <li class="nav-item"><a href="Riwayat.html">Riwayat</a></li>
+              </ul>
+              <div class="bar">
+                <img src="../Assets/Search.png" />
+                <input class="search-input" type="text" placeholder="Search..." />
+                <img src="../Assets/Bell.png" />
+                <img src="../Assets/User.png" />
+              </div>
+            </nav>
+          </section>
+
+        <section class="preview-container">
+            <img src="../Assets/resto 1 big.png">
+        </section>
+
+        <section class="input-area-container">
+            <span>
+                <img src="../Assets/date.png">
+                <input type="date" name="date" required>
+            </span>
+
+            <span>
+                <img src="../Assets/jumlah.png">
+                <input type="number" min="1" step="1" required>
+            </span>
+
+            <span>
+                <img src="../Assets/waktu.png">
+                <input type="time" name="appt" required>
+            </span>
+        </section>
+
+        <section class="small-info-container">
+            <span>
+                <p>Cafe Caffein</p>
+                <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
+            </span>
+            <span class="location">
+                <p><img src="../Assets/Lokasi.png"> Jalan Durian No.34</p>
+                <p>350m</p>
+            </span>
+        </section>
+
+        <section class="info-container">
+            <div class="info left">
+                <h1>DESKRIPSI</h1>
+                <p>Cafe Caffeine adalah kafe trendi yang populer di Medan dengan suasana modern dan berkelas, menawarkan
+                    berbagai pilihan kopi terbaik dan sering mengadakan acara seni yang menarik.</p>
+                <ul>WAKTU RESTORAN BUKA:
+                    <li>Hari Biasa: 08.00-22.00</li>
+                    <li>Sabtu: 10.00-00.00</li>
+                    <li>Minggu: 10.00-23.00</li>
+                </ul>
+                </p>
+            </div>
+            <div class="info center">
+                <div class="promo">
+                    <img src="../Assets/promosi.png"><input class="promo-input" type="input" name="promo" placeholder="Masukkan kode promo...">
+                </div>
+                <p>Minimal skor kredit 60</p>
+                <img src="../Assets/credit score.png" alt="Credit Score" class="credit">
+                <p class="skormu">Kredit Anda</p>
+                <button type="button" onclick="redirectToKonfirmasi()">Antri</button>
+
+<script>
+    //Change page to Konfirmasi
+  function redirectToKonfirmasi() {
+    window.location.href = "Konfirmasi.html";
+  }
+</script>
+            </div>
+            <div class="info right">
+                <h1>KONTAK</h1>
+                <ul>
+                    <li>(061) - 823 233 3232 <img src="../Assets/hp.png"></li>
+                    <li>@cafecafeine <img src="../Assets/insta.png"></li>
+                    <li>@cafecaffeine_official <img src="../Assets/fb.png"></li>
+                    <li>@cafecaffeinecafe <img src="../Assets/twt.png"></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

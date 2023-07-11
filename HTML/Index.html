@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="../Assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Index.css" />
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myInput");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="../Assets/Logo Besar.png" alt="Logo" width="60" height="60" />
+      </div>
+      <a class="download" href="#">Unduh Aplikasinya Sekarang!</a>
+      <div class="main">
+        <img
+          src="../Assets/Group 14.png"
+          class="aside2"
+          width="600"
+          height="500"
+        />
+        <form action="#">
+          <div class="tittle">Masuk</div>
+          <input type="email" placeholder="Email atau No. Handphone" required />
+          <input type="password" placeholder="Password" id="myInput" required />
+          <span class="textbox">Lihat Sandi</span
+          ><input type="checkbox" onclick="myFunction()" class="cekbox" />
+          <div class="link">
+            <button type="submit" class="login">Masuk</button>
+            <a href="#" class="forgot">Lupa Password</a>
+          </div>
+          <hr />
+          <div class="button">
+            <a
+              href="Daftar.html"
+              >Buat Akun</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -5,12 +5,15 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background: #d7e3fe;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  background: #d7e3fe;
 }
 
 .header {

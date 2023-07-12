@@ -5,8 +5,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
+body {
   background-image: url(../Assets/bg.png);
+}
+
+.container {
   margin: 0 auto;
 }
 

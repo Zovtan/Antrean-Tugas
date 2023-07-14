@@ -148,6 +148,7 @@ input:hover {
   padding: 20px;
   padding-bottom: 0px;
   font-size: 30px;
+  text-align: center;
 }
 
 /* IMG-DECO */
@@ -172,7 +173,6 @@ input:hover {
 
 /* MAIN-CONTAINER */
 .main-container {
-  /* background-color: wheat; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -434,26 +434,43 @@ input:hover {
   }
 }
 
-@media (max-width: 1000px) {
-  /* INFOS */
-  .title h1 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
+@media (max-width: 1050px) {
 
+  /* INFOS */
   .img-deco {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-left: 3%;
     padding-right: 3%;
   }
 
   .main-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-left: 3%;
     padding-right: 3%;
   }
+
+  .kontak-info, .img-deco img {
+    margin-left: 18px;
+  }
+
+  .reservasi-info, .img-deco img[alt="kontak info"] {
+    margin-right: 18px;
+  }
+  
 }
 
 @media (max-width: 744px) {
   /* INFOS */
+.title {
+  margin-bottom: 20px;
+}
+
   .main-container {
     flex-direction: column;
   }
@@ -469,6 +486,11 @@ input:hover {
 
   .reservasi-info {
     margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  .kontak-info {
+    margin-left: 0px;
   }
 }
 

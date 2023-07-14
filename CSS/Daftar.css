@@ -56,6 +56,7 @@ form {
   width: 100%;
   margin-bottom: 100px;
 }
+
 form input {
   height: 40px;
   width: 100%;
@@ -79,14 +80,26 @@ form input {
   margin-bottom: -7px;
   translate: -100px -16px;
 }
+
 .cb {
   font-size: 14px;
   translate: 0px -500px;
 }
+
+input:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+form input:focus {
+  outline: none;
+  border-color: #7a18f2;
+}
+
 form .button {
   height: 45px;
   margin: 8px 0;
 }
+
 form .button input {
   height: 100%;
   width: 100%;
@@ -99,14 +112,17 @@ form .button input {
   letter-spacing: 1px;
   background-color:  #7472cc;
 }
+
 form .button input:hover {
   background-color: #5c5ba1;
 }
+
 .user-detail .input-box .detail {
   font-weight: 500;
   margin-bottom: 5px;
   display: block;
 }
+
 .footer {
   display: flex;
   justify-content: center;

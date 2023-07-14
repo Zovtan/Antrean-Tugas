@@ -45,9 +45,13 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 150px;
   padding-left: 200px;
   padding-right: 200px;
+}
+
+.aside2 {
+  margin-right: 5px;
+  width: 60%;
 }
 
 form {
@@ -56,10 +60,11 @@ form {
   padding: 20px;
   box-shadow: 3px 5px 1px 2px rgba(0, 0, 0, 0.2);
   min-width: 400px;
-  translate: -70px 0px;
+  /* translate: -70px 0px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 5px;
 }
 
 .tittle {
@@ -67,6 +72,7 @@ form {
   font-size: 25px;
   font-weight: 500;
 }
+
 form input {
   height: 55px;
   width: 100%;
@@ -76,6 +82,7 @@ form input {
   font-size: 1rem;
   padding: 0 14px;
 }
+
 .cekbox {
   display: flex;
   height: 15px;
@@ -85,24 +92,33 @@ form input {
   float: inline-end;
   translate: -135px -16.8px;
 }
+
 .textbox {
   display: flex;
   margin-left: 5px;
 }
+
+input:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 form input:focus {
   outline: none;
   border-color: #7a18f2;
 }
+
 ::placeholder {
   color: #777;
   font-size: 1.063rem;
 }
+
 .link {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 15px;
 }
+
 .link .login {
   border: none;
   text-align: center;
@@ -116,9 +132,11 @@ form input:focus {
   font-weight: 600;
   transition: 0.2s ease;
 }
+
 .link .login:hover {
   background: #5c5ba1;
 }
+
 form a {
   text-decoration: none;
 }
@@ -126,9 +144,11 @@ form a {
   color: #1877f2;
   font-size: 0.875rem;
 }
+
 .link .forgot:hover {
   text-decoration: underline;
 }
+
 hr {
   border: none;
   height: 1px;
@@ -136,11 +156,13 @@ hr {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
 .button {
   margin-top: 25px;
   text-align: center;
   margin-bottom: 20px;
 }
+
 .button a {
   padding: 15px 20px;
   background: #9f9ed3;
@@ -150,11 +172,12 @@ hr {
   font-weight: 600;
   transition: 0.2s ease;
 }
+
 .button a:hover {
   background: #7472cc;
 }
 
-@media (max-width: 1441px) {
+@media (max-width: 1200px) {
   /* MAIN */
   .main {
     justify-content: center;
@@ -162,18 +185,9 @@ hr {
     padding-left: 0px;
     padding-right: 0px;
   }
-  form {
-    translate: 0px 0px !important;
-    padding: 10px;
-  }
 
   .aside2 {
     display: none;
-  }
-
-  /* CHECKBOX */
-  .cekbox {
-    translate: -145px -16.8px;
   }
 }
 
@@ -191,6 +205,6 @@ hr {
 
   /* CHECKBOX */
   .cekbox {
-    translate: -95px -16.8px;
+    translate: -85px -16.8px;
   }
 }

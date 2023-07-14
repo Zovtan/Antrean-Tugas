@@ -197,7 +197,8 @@ input:hover {
 }
 
 .noantri {
-  width: 8%;
+  width: 40px;
+  translate: 0px 5px;
 }
 
 .queue {
@@ -291,6 +292,11 @@ input:hover {
     width: 50px;
     translate: -11px;
   }
+
+  .noantri {
+    width: 20px;
+    translate: 0px 0px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -317,7 +323,7 @@ input:hover {
     justify-content: end;
   }
 
-  .bar input{
+  .bar input {
     width: 80%;
   }
 
@@ -339,10 +345,33 @@ input:hover {
     padding-top: 9px;
     padding-bottom: 9px;
   }
-  
+
   /* MAIN */
   .main-container,
   .aside-container {
     width: 100%;
+  }
+
+.info {
+  margin-left: 10px;
+}
+
+  .info p {
+    font-size: 20px;
+  }
+
+  .info div {
+    font-size: 14px;
+  }
+
+  .resto {
+    width: 150px;
+    height: 100px;
+    align-self: center;
+  }
+
+  .checkmark {
+    width: 30px;
+    height: 30px;
   }
 }

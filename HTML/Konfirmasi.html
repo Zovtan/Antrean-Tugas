@@ -1,124 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antrean - Konfirmasi</title>
-    <link rel="shortcut icon" href="../Assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/konfirmasi.css">
-</head>
+    <link
+      rel="shortcut icon"
+      href="../Assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/konfirmasi.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <section class="nav-container">
-            <nav class="navbar">
-                <img class="antrean pc" src="../Assets/Logo.png" />
-                <ul class="nav">
-                    <li class="nav-item"><a href="beranda.html">Beranda</a></li>
-                    <li class="dropdown">
-                        <button class="dropbtn">Restoran &#9662;</button>
-                        <div class="dropdown-content">
-                            <a href="#restoran-dekatmu">Restoran Dekatmu</a>
-                            <a href="#sponsor">Restoran Sponsor</a>
-                            <a href="#restoran-populer">Restoran Populer</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a href="Riwayat.html">Riwayat</a></li>
-                </ul>
-                <div class="bar">
-                    <span>
-                        <img class="antrean mobile" src="../Assets/Logo.png" />
-                    </span>
-                    <span class="bar-ipt">
-                        <img src="../Assets/Search.png" />
-                        <input class="search-input" type="text" placeholder="Search..." />
-                        <img src="../Assets/bell.png" />
-                        <img src="../Assets/user.png" />
-                    </span>
-                </div>
-            </nav>
-        </section>
+      <section class="nav-container">
+        <nav class="navbar">
+          <img class="antrean pc" src="../Assets/Logo.png" />
+          <ul class="nav">
+            <li class="nav-item"><a href="beranda.html">Beranda</a></li>
+            <li class="dropdown">
+              <button class="dropbtn">Restoran &#9662;</button>
+              <div class="dropdown-content">
+                <a href="#restoran-dekatmu">Restoran Dekatmu</a>
+                <a href="#sponsor">Restoran Sponsor</a>
+                <a href="#restoran-populer">Restoran Populer</a>
+              </div>
+            </li>
+            <li class="nav-item"><a href="Riwayat.html">Riwayat</a></li>
+          </ul>
+          <div class="bar">
+            <span>
+              <img class="antrean mobile" src="../Assets/Logo.png" />
+            </span>
+            <span class="bar-ipt">
+              <img src="../Assets/Search.png" />
+              <input class="search-input" type="text" placeholder="Search..." />
+              <img src="../Assets/bell.png" />
+              <img src="../Assets/user.png" />
+            </span>
+          </div>
+        </nav>
+      </section>
 
-        <section class="title">
-            <h1>Cafe Caffeine</h1>
-        </section>
+      <section class="title">
+        <h1>Cafe Caffeine</h1>
+      </section>
 
-        <section class="img-deco">
-            <img src="../Assets/reservasi info.png" alt="reservasi info">
-            <img src="../Assets/kontak info.png" alt="kontak info">
-        </section>
+      <section class="img-deco">
+        <img src="../Assets/reservasi info.png" alt="reservasi info" />
+        <img src="../Assets/kontak info.png" alt="kontak info" />
+      </section>
 
-        <section class="main-container">
-            <div class="reservasi-info">
-                <h1>INFO RESERVASI</h1>
-                <ul>
-                    <li><img src="../Assets/date.png" alt="date"> Selasa, 13 Juni 2023</li>
-                    <li><img src="../Assets/Jumlah.png"> 4 orang</li>
-                    <li><img src="../Assets/NoAntri.png"> No. Antrian 213</li>
-                    <li><img src="../Assets/waktu.png"> ±30 menit (estimasi waktu)</li>
-                </ul>
-            </div>
-
-            <div class="kontak-info">
-                <h1>KONTAK PENGGUNA</h1>
-                <div class="collumn">
-                    <div class="cell">
-                        <p>Nama</p>
-                        <img src="../Assets/Nama.png" alt="Nama">
-                        <div class="input-info">
-                            <input type="text" placeholder="Masukkan nama..." value="Antoni" required>
-                            <span class="underline-animation"></span>
-                        </div>
-                    </div>
-                    <div class="cell">
-                        <p>No. HP</p>
-                        <img src="../Assets/NoTelp.png" alt="NoTelp">
-                        <div class="input-info">
-                            <input type="text" placeholder="(Opsional) Masukkan nomor HP...">
-                            <span class="underline-animation"></span>
-                        </div>
-                    </div>
-                    <div class="cell">
-                        <p>Email</p>
-                        <img src="../Assets/email.png" alt="email">
-                        <div class="input-info">
-                            <input type="text" placeholder="Masukkan email..." value="Antoni@gmail.com"
-                                required>
-                            <span class="underline-animation"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="confirm">
-            <button id="konfirmasi" type="submit">Konfirmasi</button>
-            <!-- <img src="../Assets/random 1.png" alt="random 1"> -->
-        </section>
-        
-        <div id="myPopup" class="popup">
-            <div class="popup-content">
-                <h1>RESERVASI BERHASIL</h1>
-                <img src="../Assets/berhasil.png" alt="berhasil">
-                <p>Terimakasih atas reservasi anda</p>
-                <button id="closePopup" onclick="window.location.href = 'beranda.html';">Kembali</button>
-            </div>
+      <section class="main-container">
+        <div class="reservasi-info">
+          <h1>INFO RESERVASI</h1>
+          <ul>
+            <li>
+              <img src="../Assets/date.png" alt="date" /> Selasa, 13 Juni 2023
+            </li>
+            <li><img src="../Assets/Jumlah.png" /> 4 orang</li>
+            <li><img src="../Assets/NoAntri.png" /> No. Antrian 213</li>
+            <li>
+              <img src="../Assets/waktu.png" /> ±30 menit (estimasi waktu)
+            </li>
+          </ul>
         </div>
 
-        <script>
-            const myButton = document.getElementById("konfirmasi");
-            const myPopup = document.getElementById("myPopup");
+        <div class="kontak-info">
+          <h1>KONTAK PENGGUNA</h1>
+          <div class="collumn">
+            <div class="cell">
+              <p>Nama</p>
+              <img src="../Assets/Nama.png" alt="Nama" />
+              <div class="input-info">
+                <input
+                  id="namaInput"
+                  type="text"
+                  placeholder="Masukkan nama..."
+                  value="Antoni"
+                  required
+                />
+                <span class="underline-animation"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <p>No. HP</p>
+              <img src="../Assets/NoTelp.png" alt="NoTelp" />
+              <div class="input-info">
+                <input
+                  id="noHpInput"
+                  type="text"
+                  placeholder="(Opsional) Masukkan nomor HP..."
+                />
+                <span class="underline-animation"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <p>Email</p>
+              <img src="../Assets/email.png" alt="email" />
+              <div class="input-info">
+                <input
+                  id="emailInput"
+                  type="text"
+                  placeholder="Masukkan email..."
+                  value="Antoni@gmail.com"
+                  required
+                />
+                <span class="underline-animation"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            myButton.addEventListener("click", function () {
-                myPopup.classList.add("show");
-            });
-        </script>
+      <section class="confirm">
+        <button id="konfirmasi" type="submit">Konfirmasi</button>
+        <!-- <img src="../Assets/random 1.png" alt="random 1"> -->
+      </section>
 
-        <section class="footer">
-            <a href="cafe_caffein.html">Kembali</a>
-        </section>
+      <div id="myPopup" class="popup">
+        <div class="popup-content">
+          <h1>RESERVASI BERHASIL</h1>
+          <img src="../Assets/berhasil.png" alt="berhasil" />
+          <p>Terimakasih atas reservasi anda</p>
+          <button
+            id="closePopup"
+            onclick="window.location.href = 'beranda.html';"
+          >
+            Kembali
+          </button>
+        </div>
+      </div>
+
+      <script>
+        //popup & validation script 
+        const myButton = document.getElementById("konfirmasi");
+        const myPopup = document.getElementById("myPopup");
+        const namaInput = document.getElementById("namaInput");
+        const emailInput = document.getElementById("emailInput");
+
+        myButton.addEventListener("click", function () {
+          if (namaInput.checkValidity() && emailInput.checkValidity()) {
+            console.log("Popup displayed");
+            myPopup.classList.add("show");
+          } else {
+            alert("Mohon isi kedua nama dan email.");
+          }
+        });
+      </script>
+
+      <section class="footer">
+        <a href="cafe_caffein.html">Kembali</a>
+      </section>
     </div>
-</body>
-
+  </body>
 </html>

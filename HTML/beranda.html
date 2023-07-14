@@ -10,38 +10,6 @@
       href="../Assets/favicon.ico"
       type="image/x-icon"
     />
-    <script>
-      //Left and right function
-      function leftScroll1() {
-        const left = document.querySelector(".resto-container.resto1");
-        left.scrollBy(-590, 0);
-      }
-
-      function rightScroll1() {
-        const right = document.querySelector(".resto-container.resto1");
-        right.scrollBy(590, 0);
-      }
-
-      function leftScroll2() {
-        const left = document.querySelector(".resto-container.resto2");
-        left.scrollBy(-590, 0);
-      }
-
-      function rightScroll2() {
-        const right = document.querySelector(".resto-container.resto2");
-        right.scrollBy(590, 0);
-      }
-
-      function leftScroll3() {
-        const left = document.querySelector(".resto-container.resto3");
-        left.scrollBy(-590, 0);
-      }
-
-      function rightScroll3() {
-        const right = document.querySelector(".resto-container.resto3");
-        right.scrollBy(590, 0);
-      }
-    </script>
   </head>
 
   <body>
@@ -63,13 +31,13 @@
           </ul>
           <div class="bar">
             <span>
-            <img class="antrean mobile" src="../Assets/Logo.png" />
+              <img class="antrean mobile" src="../Assets/Logo.png" />
             </span>
             <span class="bar-ipt">
-            <img src="../Assets/Search.png" />
-            <input class="search-input" type="text" placeholder="Search..." />
-            <img src="../Assets/bell.png" />
-            <img src="../Assets/user.png" />
+              <img src="../Assets/Search.png" />
+              <input class="search-input" type="text" placeholder="Search..." />
+              <img src="../Assets/bell.png" />
+              <img src="../Assets/user.png" />
             </span>
           </div>
         </nav>
@@ -191,7 +159,12 @@
                 alt="favourite"
               />
             </div>
-            <div class="resto">
+
+            <button class="show normal" id="more-btn" onclick="show()">
+              Show More
+            </button>
+
+            <div id="resto-more" class="resto hidden">
               <img class="resto-img" src="../Assets/resto (7).png" />
               <h1>Priscilla Desert</h1>
               <p><span class="yellow">~13 menit</span> waktu antri</p>
@@ -204,7 +177,54 @@
                 alt="favourite"
               />
             </div>
+
+            <div id="resto-more2" class="resto hidden">
+              <img class="resto-img" src="../Assets/resto hidden (1).png" />
+              <h1>Unboss Cafe</h1>
+              <p><span class="green">~1 menit</span> waktu antri</p>
+              <img class="queue" src="../Assets/sepi.png" />
+              <p class="purp">Antri sekarang!</p>
+              <div class="stars">&#11088;&#11088;&#11088;&#11088;</div>
+              <img
+                class="favourite"
+                src="../Assets/favourite.png"
+                alt="favourite"
+              />
+            </div>
+
+            <div id="resto-more3" class="resto hidden">
+              <img class="resto-img" src="../Assets/resto hidden (2).png" />
+              <h1>L Tropical Cafe</h1>
+              <p><span class="yellow">~18 menit</span> waktu antri</p>
+              <img class="queue" src="../Assets/sedang.png" />
+              <p class="purp">Antri sekarang!</p>
+              <div class="stars">&#11088;&#11088;</div>
+              <img
+                class="favourite"
+                src="../Assets/favourite.png"
+                alt="favourite"
+              />
+            </div>
+
+            <div id="resto-more4" class="resto hidden">
+              <img class="resto-img" src="../Assets/resto hidden (3).png" />
+              <h1>Lavend Eataries</h1>
+              <p><span class="red">~30 menit</span> waktu antri</p>
+              <img class="queue" src="../Assets/ramai.png" />
+              <p class="purp">Antri sekarang!</p>
+              <div class="stars">&#11088;&#11088;&#11088;&#11088;</div>
+              <img
+                class="favourite"
+                src="../Assets/favourite.png"
+                alt="favourite"
+              />
+            </div>
+
+            <button class="show hidden" id="less-btn" onclick="less()">
+              Show Less
+            </button>
           </div>
+
           <button class="right" onclick="rightScroll1()">
             <p class="fas fa-angle-double-right">&#9656;</p>
           </button>
@@ -307,7 +327,12 @@
                 alt="favourite"
               />
             </div>
-            <div class="resto">
+
+            <button class="show normal" id="more-btn2" onclick="show2()">
+              Show More
+            </button>
+
+            <div id="resto-more5" class="resto hidden">
               <img class="resto-img" src="../Assets/resto (15).png" />
               <h1>Mylamien</h1>
               <p><span class="yellow">~17 menit</span> waktu antri</p>
@@ -320,6 +345,52 @@
                 alt="favourite"
               />
             </div>
+
+            <div id="resto-more6" class="resto hidden">
+              <img class="resto-img" src="../Assets/resto hidden (4).png" />
+              <h1>Vulcanic Resto</h1>
+              <p><span class="green">~10 menit</span> waktu antri</p>
+              <img class="queue" src="../Assets/sepi.png" />
+              <p class="purp">Antri sekarang!</p>
+              <div class="stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+              <img
+                class="favourite"
+                src="../Assets/favourite.png"
+                alt="favourite"
+              />
+            </div>
+
+            <div id="resto-more7" class="resto hidden">
+              <img class="resto-img" src="../Assets/resto hidden (5).png" />
+              <h1>Rooftop Buffet</h1>
+              <p><span class="yellow">~14 menit</span> waktu antri</p>
+              <img class="queue" src="../Assets/sedang.png" />
+              <p class="purp">Antri sekarang!</p>
+              <div class="stars">&#11088;&#11088;&#11088;</div>
+              <img
+                class="favourite"
+                src="../Assets/favourite.png"
+                alt="favourite"
+              />
+            </div>
+
+            <div id="resto-more8" class="resto hidden">
+              <img class="resto-img" src="../Assets/resto hidden (6).png" />
+              <h1>Outback Food</h1>
+              <p><span class="red">~30 menit</span> waktu antri</p>
+              <img class="queue" src="../Assets/ramai.png" />
+              <p class="purp">Antri sekarang!</p>
+              <div class="stars">&#11088;&#11088;&#11088;&#11088;</div>
+              <img
+                class="favourite"
+                src="../Assets/favourite.png"
+                alt="favourite"
+              />
+            </div>
+
+            <button class="show hidden" id="less-btn2" onclick="less2()">
+              Show Less
+            </button>
           </div>
           <button class="right" onclick="rightScroll2()">
             <p class="fas fa-angle-double-right">&#9656;</p>
@@ -423,7 +494,12 @@
                 alt="favourite"
               />
             </div>
-            <div class="resto">
+
+            <button class="show normal" id="more-btn3" onclick="show3()">
+              Show More
+            </button>
+
+            <div id="resto-more9" class="resto hidden">
               <img class="resto-img" src="../Assets/resto (23).png" />
               <h1>Vilda Vingar</h1>
               <p><span class="green">~4 menit</span> waktu antri</p>
@@ -436,6 +512,38 @@
                 alt="favourite"
               />
             </div>
+
+            <div id="resto-more10" class="resto hidden">
+              <img class="resto-img" src="../Assets/resto hidden (7).png" />
+                <h1>Vulcanic Resto</h1>
+                <p><span class="green">~7 menit</span> waktu antri</p>
+                <img class="queue" src="../Assets/sepi.png" />
+                <p class="purp">Antri sekarang!</p>
+                <div class="stars">&#11088;&#11088;</div>
+                <img
+                  class="favourite"
+                  src="../Assets/favourite.png"
+                  alt="favourite"
+                />
+            </div>
+
+            <div id="resto-more11" class="resto hidden">
+              <img class="resto-img" src="../Assets/resto hidden (8).png" />
+                <h1>Kito</h1>
+                <p><span class="yellow">~17 menit</span> waktu antri</p>
+                <img class="queue" src="../Assets/sedang.png" />
+                <p class="purp">Antri sekarang!</p>
+                <div class="stars">&#11088;&#11088;&#11088;&#11088;</div>
+                <img
+                  class="favourite"
+                  src="../Assets/favourite.png"
+                  alt="favourite"
+                />
+            </div>
+
+            <button class="show hidden" id="less-btn3" onclick="less3()">
+              Show Less
+            </button>
           </div>
           <button class="right" onclick="rightScroll3()">
             <p class="fas fa-angle-double-right">&#9656;</p>
@@ -500,5 +608,132 @@
         </div>
       </div>
     </section>
+
+    <script>
+      var resto = document.getElementById("resto-more");
+      var resto2 = document.getElementById("resto-more2");
+      var resto3 = document.getElementById("resto-more3");
+      var resto4 = document.getElementById("resto-more4");
+      var resto5 = document.getElementById("resto-more5");
+      var resto6 = document.getElementById("resto-more6");
+      var resto7 = document.getElementById("resto-more7");
+      var resto8 = document.getElementById("resto-more8");
+      var resto9 = document.getElementById("resto-more9");
+      var resto10 = document.getElementById("resto-more10");
+      var resto11 = document.getElementById("resto-more11");
+      var more_btn = document.getElementById("more-btn");
+      var less_btn = document.getElementById("less-btn");
+
+      var resto2 = document.getElementById("resto-more2");
+      var more_btn2 = document.getElementById("more-btn2");
+      var less_btn2 = document.getElementById("less-btn2");
+
+      var resto3 = document.getElementById("resto-more3");
+      var more_btn3 = document.getElementById("more-btn3");
+      var less_btn3 = document.getElementById("less-btn3");
+
+      //Show more function
+      function show() {
+        resto.classList.remove("hidden");
+        resto2.classList.remove("hidden");
+        resto3.classList.remove("hidden");
+        resto4.classList.remove("hidden");
+        more_btn.classList.remove("normal");
+        less_btn.classList.remove("hidden");
+
+        more_btn.classList.add("hidden");
+        less_btn.classList.add("normal");
+      }
+
+      function show2() {
+        resto5.classList.remove("hidden");
+        resto6.classList.remove("hidden");
+        resto7.classList.remove("hidden");
+        resto8.classList.remove("hidden");
+        more_btn2.classList.remove("normal");
+        less_btn2.classList.remove("hidden");
+
+        more_btn2.classList.add("hidden");
+        less_btn2.classList.add("normal");
+      }
+
+      function show3() {
+        resto9.classList.remove("hidden");
+        resto10.classList.remove("hidden");
+        resto11.classList.remove("hidden");
+        more_btn3.classList.remove("normal");
+        less_btn3.classList.remove("hidden");
+
+        more_btn3.classList.add("hidden");
+        less_btn3.classList.add("normal");
+      }
+
+      //show less function
+      function less() {
+        more_btn.classList.remove("hidden");
+        less_btn.classList.remove("normal");
+
+        resto.classList.add("hidden");
+        resto2.classList.add("hidden");
+        resto3.classList.add("hidden");
+        resto4.classList.add("hidden");
+        more_btn.classList.add("normal");
+        less_btn.classList.add("hidden");
+      }
+
+      function less2() {
+        more_btn2.classList.remove("hidden");
+        less_btn2.classList.remove("normal");
+
+        resto5.classList.add("hidden");
+        resto6.classList.add("hidden");
+        resto7.classList.add("hidden");
+        resto8.classList.add("hidden");
+        more_btn2.classList.add("normal");
+        less_btn2.classList.add("hidden");
+      }
+
+      function less3() {
+        more_btn3.classList.remove("hidden");
+        less_btn3.classList.remove("normal");
+
+        resto9.classList.add("hidden");
+        resto10.classList.add("hidden");
+        resto11.classList.add("hidden");
+        more_btn3.classList.add("normal");
+        less_btn3.classList.add("hidden");
+      }
+
+      //Left and right function
+      function leftScroll1() {
+        const left = document.querySelector(".resto-container.resto1");
+        left.scrollBy(-590, 0);
+      }
+
+      function rightScroll1() {
+        const right = document.querySelector(".resto-container.resto1");
+        right.scrollBy(590, 0);
+      }
+
+      function leftScroll2() {
+        const left = document.querySelector(".resto-container.resto2");
+        left.scrollBy(-590, 0);
+      }
+
+      function rightScroll2() {
+        const right = document.querySelector(".resto-container.resto2");
+        right.scrollBy(590, 0);
+      }
+
+      function leftScroll3() {
+        const left = document.querySelector(".resto-container.resto3");
+        left.scrollBy(-590, 0);
+      }
+
+      function rightScroll3() {
+        const right = document.querySelector(".resto-container.resto3");
+        right.scrollBy(590, 0);
+      }
+    </script>
   </body>
 </html>
